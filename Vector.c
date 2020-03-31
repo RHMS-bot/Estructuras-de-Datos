@@ -24,7 +24,7 @@ int* reservarmemoria(int *arr,int capacidad){
 	for(j;j<capacidad;j++){
 		*(arr2+j)=*(arr+j);
 		
-	}
+	 }
 	free(arr);
 	return (int *)arr2;
 	free(arr2);
@@ -80,7 +80,7 @@ int main(){
    llenar(n);
   }
   else{
-  printf("\n Valor ingresado no válido");
+  printf("\n Valor ingresado no vÃ¡lido");
  }
  return 0;
 }
