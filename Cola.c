@@ -24,7 +24,7 @@
 	
 	void agregar(struct cola *Cola,int elemento){
 		if (Cola->frente-1==Cola->detras || Cola->frente==0 && Cola->detras==99 || Cola->frente==99 && Cola->detras==0)
-	        printf("\nLa cola está llena");
+	        printf("\nLa cola estÃ¡ llena");
 	    else{
 		    Cola->detras=++Cola->detras % 100;
 	        Cola->elementos[Cola->detras]=elemento;
@@ -34,8 +34,14 @@
 	void eliminar(struct cola *Cola){
 		if (Cola->detras ==-1)
 	        printf("\n No hay elementos en la cola");
-	    else
-		 Cola->frente=++Cola->frente % 100;
+	    else{
+	     Cola->elementos[Cola->frente]=0;
+	     if(Cola->frente+1 % 100 == Cola->detras+1 % 100){
+			 	Cola->detras=-1;
+			}
+		   else
+		      Cola->frente=++Cola->frente % 100;
+	 }
 	}	
 	
 	
