@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "Arbol binario.h"
+#include "Arbol_binario.h"
 
 
 int main(void){
