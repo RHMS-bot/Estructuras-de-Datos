@@ -3,11 +3,11 @@
 
         /*Se utilizan 5 prioridades, cada prioridad tiene una cola*/
         /*Mayor prioridad 1*/
-	 struct ColaPrioridad{
+	 typedef struct ColaPrioridad{
 		   int elementos[100];
 		   int frente;
 		   int detras;
-		};
+		}ColaPrioridad;
 		
 		void crear(ColaPrioridad *);
 		void encolar(ColaPrioridad *,int,int);
