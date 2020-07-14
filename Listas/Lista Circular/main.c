@@ -3,7 +3,6 @@
 
 int main(void){
 	int opc=0;
-	int creada=0;
 	int dato=0;
 	struct Circular *lista=NULL;
 	printf("----------Lista Circular----------\n");
@@ -13,7 +12,7 @@ int main(void){
 	printf("1.-Agregar\n2.-Mostrar\n3.-Eliminar\n4.-Salir\n");
 	scanf("%d",&opc);
 	if(opc==1){
-		if(creada==0){
+		if(lista==NULL){
 			printf("\nEscriba el dato que va a meter en la lista:\n ");
 			scanf("%d",&dato);
 			lista=crear(dato);
@@ -21,7 +20,6 @@ int main(void){
 	        	printf("\nNo se pudo crear la lista\n");
 		        return 1;
 	        }
-			creada=1;
 		}
 		else{
 			printf("\nEscriba el dato que va a meter en la lista:\n ");
