@@ -23,6 +23,10 @@ void mostrar(int pila[],int tope){
 }
 
 int pop(int pila[],int tope){
+	if(tope == -1){
+		printf("\nNo hay elementos en la pila");
+		return tope;
+	}
 	pila[tope]=0;
 	tope=tope-1;
 	
