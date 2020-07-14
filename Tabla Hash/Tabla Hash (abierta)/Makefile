@@ -1,5 +1,5 @@
 Tabla_Hash.o:Tabla_Hash.c Tabla_Hash.h
-	gcc -c Vector.c
+	gcc -c Tabla_Hash.c
 
 main.o: main.c Tabla_Hash.h
 	gcc main.c -c
