@@ -1,5 +1,5 @@
 Lista_Doble.o:Lista_Doble.c Lista_Doble.h
-	gcc -c Lista.c
+	gcc -c Lista_Doble.c
 
 main.o: main.c Lista_Doble.h
 	gcc main.c -c
