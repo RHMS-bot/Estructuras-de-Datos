@@ -11,6 +11,10 @@ int push(int pila[],int dato,int tope){
 
 void mostrar(int pila[],int tope){
 	int i=0;
+	if(tope == -1){
+	 printf("\nNo hay una pila que mostrar");
+		return;
+	}
 	while(i<=tope){
 		printf("%d,",pila[i]);
 		++i;
