@@ -6,8 +6,8 @@ struct Lista{
 	struct Lista *siguiente;
 };
 
-struct Lista * crear(int dat);
-struct Lista * insertar(struct Lista* lista,int dato);
-void mostrar(struct Lista * lista);
-struct Lista * invertir(struct Lista * lista);
-struct Lista * eliminar(struct Lista * lista,int dato);
+struct Lista * crear(int);
+struct Lista * insertar(struct Lista*,int);
+void mostrar(struct Lista *);
+struct Lista * invertir(struct Lista *);
+struct Lista * eliminar(struct Lista *,int);
