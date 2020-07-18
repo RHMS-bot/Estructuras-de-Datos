@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 struct Nodo{
-	 int dato;
-	 struct Nodo * derecha;
-	 struct Nodo * izquierda;
-	};
+ int dato;
+ struct Nodo * derecha;
+ struct Nodo * izquierda;
+};
 
 struct Nodo *insertar (struct Nodo *,int);
 void buscar(struct Nodo*,int);
